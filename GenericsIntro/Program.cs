@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GenericsIntro
 {
@@ -6,7 +7,19 @@ namespace GenericsIntro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyList<string> names = new MyList<string>();
+            names.Add("Atakan");
+
+            Console.WriteLine(names.Length);
+            names.Add("Melek");
+            
+            Console.WriteLine(names.Length);
+
+            foreach (var item in names.Items)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 }
