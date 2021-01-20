@@ -18,6 +18,10 @@ namespace Collections
             //Console.WriteLine(Names[0]);
 
             List<string> Names2 = new List<string> { "Atakan", "Furkan", "Melek" };
+            Console.WriteLine(Names2[2]);
+            Names2.Add("İlker");
+            Console.WriteLine(Names2[3]);
+            Console.WriteLine(Names2[0]);
         }
     }
 }
